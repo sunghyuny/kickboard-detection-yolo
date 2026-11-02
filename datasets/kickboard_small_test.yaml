@@ -1,0 +1,10 @@
+# make_small_test.py로 생성. 배율: [0.5, 0.25, 0.125]
+train: kickboard_small_test/r0.5/images
+val: kickboard_small_test/r0.5/images
+test:
+  - kickboard_small_test/r0.5/images
+  - kickboard_small_test/r0.25/images
+  - kickboard_small_test/r0.125/images
+
+nc: 1
+names: ['kickboard']

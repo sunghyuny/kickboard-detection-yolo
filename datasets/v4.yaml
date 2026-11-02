@@ -1,0 +1,22 @@
+# v4: v3 + COCO 오토바이 사진(정답 라벨) — v3에서 오토바이 mAP50 0.195로 부족해서 보충
+# make_v3_data.py, get_coco_animals.py (--motorcycle 3000)로 생성
+# path 없음 = 이 yaml이 있는 datasets/ 기준 (PC·Colab 공통)
+train:
+  - v3/kickboard/train/images
+  - v3/extra/scooter-ewgvn/train/images
+  - v3/extra/escooter-detection/train/images
+  - v3/extra/escooter-detection/valid/images
+  - v3/backgrounds/train/images
+  - v3/wild_animals/train/images
+  - coco_animals/train/images
+  - coco_motorcycle/train/images
+val:
+  - v3/kickboard/valid/images
+  - v3/backgrounds/valid/images
+  - v3/wild_animals/valid/images
+  - coco_animals/valid/images
+  - coco_motorcycle/valid/images
+test: v3/kickboard/test/images
+
+nc: 5
+names: ['kickboard', 'person', 'car', 'motorcycle', 'animal']

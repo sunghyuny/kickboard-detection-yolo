@@ -1,0 +1,23 @@
+# 화이트리스트: 코드·설정·리포트·v4 가중치만 올림 (데이터셋·영상·실험 결과·다른 가중치는 제외)
+/*
+!/.gitignore
+!/README.md
+!/*.py
+!/colab_train_v3.ipynb
+!/colab_train_v4.ipynb
+!/tools/
+!/report/
+!/datasets/
+/datasets/*
+!/datasets/*.yaml
+!/train_v4_moto/
+/train_v4_moto/*
+!/train_v4_moto/args.yaml
+!/train_v4_moto/results.csv
+!/train_v4_moto/results.png
+!/train_v4_moto/confusion_matrix_normalized.png
+!/train_v4_moto/BoxPR_curve.png
+!/train_v4_moto/weights/
+/train_v4_moto/weights/*
+!/train_v4_moto/weights/best.pt
+__pycache__/

@@ -1,0 +1,15 @@
+# 킥보드 v2: 기존 데이터 + Roboflow 추가 데이터 2개 + 한국 거리 배경(라벨 없음)
+# path 없음 = 이 yaml이 있는 datasets/ 기준
+train:
+  - kickboard/train/images
+  - extra/scooter-ewgvn/train/images
+  - extra/escooter-detection/train/images
+  - extra/escooter-detection/valid/images
+  - backgrounds/train/images
+val:
+  - kickboard/valid/images
+  - backgrounds/valid/images
+test: kickboard/test/images
+
+nc: 1
+names: ['kickboard']
